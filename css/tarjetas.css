@@ -1,0 +1,44 @@
+/* --- TARJETA ESTILO DRAGON BALL --- */
+
+.tarjeta {
+  width: 260px;
+  height: 420px;            /* altura fija */
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+/* Zona de imagen con tamaño fijo */
+.zona-imagen {
+  width: 100%;
+  height: 300px;            /* mismo tamaño para todas las imágenes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d3d3; /* se cambia con input color */
+  overflow: hidden;
+}
+
+/* Imagen adaptada sin deformarse */
+.zona-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* ajuste perfecto */
+}
+
+/* Zona inferior con botones */
+.acciones {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #f2f2f2;
+}
+
+.acciones button {
+  width: 100%;
+}

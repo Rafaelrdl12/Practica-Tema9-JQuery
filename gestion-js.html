@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de elementos - JS</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/globales.css">
+  <link rel="stylesheet" href="css/tarjetas.css">
+</head>
+
+<body>
+  <div class="contenedor">
+    <h1>Gestión de elementos con JavaScript</h1>
+      <a href="index.html" class="btn-volver-icono"> ⬅️ </a>
+
+    <form id="form-control">
+      
+      <label for="colorFondo">Selecciona un color:</label>
+      <input type="color" id="colorFondo" value="#d3d3d3" />
+
+      <button type="button" id="btnColor">Cambiar color de fondo</button>
+      <button type="button" id="btnAdd">Añadir más elementos</button>
+      <button type="button" id="btnReset">Reset</button>
+    
+    </form>
+
+    <h2>Elementos</h2>
+    <div id="elementos">
+      <div class="tarjeta">
+        <div class="zona-imagen">
+          <img src="images/Freezer.png" alt="Freezer" />
+        </div>
+        <div class="acciones">
+          <button class="btnCambiar">Cambiar</button>
+          <button class="btnBorrar">Borrar</button>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="zona-imagen">
+          <img src="images/goku_normal.png" alt="Goku" />
+        </div>
+        <div class="acciones">
+          <button class="btnCambiar">Cambiar</button>
+          <button class="btnBorrar">Borrar</button>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="zona-imagen">
+          <img src="images/picolo_normal.png" alt="Piccolo" />
+        </div>
+        <div class="acciones">
+          <button class="btnCambiar">Cambiar</button>
+          <button class="btnBorrar">Borrar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Tu script JS puro -->
+  <script src="js/gestion-js.js"></script>
+</body>
+
+</html>

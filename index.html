@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 8 - Rafael De La Fuente López</title>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", sans-serif;
+      background-color: #f5f6f7;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    /* Tarjetas */
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+      transition: 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #4b5563;
+      margin-bottom: 18px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.2s ease;
+    }
+
+    .card a:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    Práctica 8 – Rafael De La Fuente López
+  </header>
+
+  <main>
+
+    <h2 style="text-align:center; font-weight:600;">
+      Selecciona la sección de la práctica
+    </h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h2>Gestión elementos JS</h2>
+        <p>Versión en JavaScript puro para gestionar tarjetas dinámicas.</p>
+        <a href="gestion-js.html">Entrar</a>
+      </div>
+
+      <div class="card">
+        <h2>Gestión elementos jQuery</h2>
+        <p>Versión usando jQuery para la manipulación del DOM.</p>
+        <a href="gestion-jquery.html">Entrar</a>
+      </div>
+
+      <div class="card">
+        <h2>Human Benchmark JS</h2>
+        <p>Simulación del test de reflejos usando JavaScript.</p>
+        <a href="benchmark-js.html">Entrar</a>
+      </div>
+
+      <div class="card">
+        <h2>Human Benchmark jQuery</h2>
+        <p>Versión del test usando jQuery y estados dinámicos.</p>
+        <a href="benchmark-jquery.html">Entrar</a>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
