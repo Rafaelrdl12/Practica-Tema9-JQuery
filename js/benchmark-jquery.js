@@ -20,7 +20,7 @@ $(function() {
       $pantalla
         .removeClass()
         .addClass('estado-esperando');
-      $mensaje.text('Espera a que la pantalla se ponga roja...');
+      $mensaje.text('Espera a que la pantalla se ponga verde...');
 
       const retraso = 1000 + Math.random() * 3000;
       timeoutId = setTimeout(function() {

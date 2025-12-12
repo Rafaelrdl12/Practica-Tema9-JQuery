@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (estado === 'inicial') {
       estado = 'esperando';
       pantalla.className = 'estado-esperando';
-      mensaje.textContent = 'Espera a que la pantalla se ponga roja...';
+      mensaje.textContent = 'Espera a que la pantalla se ponga verde...';
 
       const retraso = 1000 + Math.random() * 3000;
       timeoutId = setTimeout(() => {
